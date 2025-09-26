@@ -32,6 +32,18 @@ router.get('/navi', (req, res) => {
     })
 })
 
+router.get('/my-promo', (req, res) => {
+    res.render('my-promo', {
+        title: "Mening promokodlarim | Talabachilik Uz"
+    })
+})
+
+router.get('/places', (req, res) => {
+    res.render('places', {
+        title: "Ko'ngil ochar manzil | Talabachilik Uz"
+    })
+})
+
 
 
 export default router;

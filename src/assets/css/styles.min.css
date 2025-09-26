@@ -6134,8 +6134,8 @@ fieldset:disabled .btn {
 }
 
 .card {
-    --bs-card-spacer-y: 30px;
-    --bs-card-spacer-x: 30px;
+    --bs-card-spacer-y: 10px;
+    --bs-card-spacer-x: 10px;
     --bs-card-title-spacer-y: 0.5rem;
     --bs-card-title-color: #2A3547;
     --bs-card-subtitle-color: #2A3547;
@@ -6210,6 +6210,19 @@ fieldset:disabled .btn {
     flex-wrap: wrap;
 }
 
+.house-card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    display: flex;
+    gap: 16px;           /* cardlar orasidagi masofa */
+    flex-wrap: wrap;
+}
+
+
+
 .card-title {
     margin-bottom: var(--bs-card-title-spacer-y);
     color: var(--bs-card-title-color)
@@ -6282,7 +6295,7 @@ fieldset:disabled .btn {
 .card-img,
 .card-img-bottom,
 .card-img-top {
-    width: 100%
+    width: 100%;
 }
 
 .card-img,
@@ -20476,3 +20489,268 @@ ul {
   line-height: 1.4;
 }
 
+.black-friday-component {
+  --count: 0;
+  --days: 31;
+  --hours: 24;
+  --minutes: 60;
+  --seconds: 60;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 0 40px;
+}
+.black-friday-component .coupon {
+  border-radius: 12px;
+  display: flex;
+  width: 550px;
+  height: 190px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid #654bff;
+  scale: 0.7;
+  transform-origin: bottom center;
+  background-color: #202835;
+}
+.black-friday-component .coupon:hover .content h3 > span {
+  animation: jump 0.15s ease-out 1 normal both;
+}
+.black-friday-component .coupon:hover .content h3 > span:nth-of-type(1) {
+  animation-delay: 0.03s;
+}
+.black-friday-component .coupon:hover .content h3 > span:nth-of-type(2) {
+  animation-delay: 0.06s;
+}
+.black-friday-component .coupon:hover .content h3 > span:nth-of-type(3) {
+  animation-delay: 0.09s;
+}
+.black-friday-component .coupon:hover .content h3 > span:nth-of-type(4) {
+  animation-delay: 0.12s;
+}
+.black-friday-component .coupon:hover .content h3 > span:nth-of-type(5) {
+  animation-delay: 0.15s;
+}
+.black-friday-component .coupon:hover .content h3 > span:nth-of-type(6) {
+  animation-delay: 0.18s;
+}
+.black-friday-component .coupon:hover .content h3 > span:nth-of-type(7) {
+  animation-delay: 0.21s;
+}
+.black-friday-component .coupon:hover .content h3 > span:nth-of-type(8) {
+  animation-delay: 0.24s;
+}
+.black-friday-component .coupon:hover .content h3 > span:nth-of-type(9) {
+  animation-delay: 0.27s;
+}
+.black-friday-component .coupon:hover .content h3 > span:nth-of-type(10) {
+  animation-delay: 0.3s;
+}
+.black-friday-component .coupon:hover .content h3 > span:nth-of-type(11) {
+  animation-delay: 0.33s;
+}
+.black-friday-component .coupon:hover .content h3 > span:nth-of-type(12) {
+  animation-delay: 0.36s;
+}
+.black-friday-component .coupon .box {
+  height: 100%;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 1rem;
+}
+.black-friday-component .coupon .box span {
+  display: block;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: white;
+}
+.black-friday-component .coupon .diver {
+  display: block;
+  width: 0px;
+  height: 160px;
+  border: 3px dashed transparent;
+  border-right-color: #654bff;
+}
+.black-friday-component .coupon .content {
+  padding: 1rem;
+  flex: 1;
+  color: #fff;
+  width: 330px;
+  height: 100%;
+}
+.black-friday-component .coupon .content h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  height: 34px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.black-friday-component .coupon .content h3 span.end {
+  width: 30px;
+}
+.black-friday-component .coupon .content p {
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+   font-size: 20px;
+  line-height: 1.6rem; /* matn balandligi kattalashtirildi */
+  margin-bottom: 0.8rem; /* paragraflar orasida bo‘sh joy qo‘shildi */
+}
+.promo-code {
+  font-style: italic;
+  color: #654bff;
+  text-transform: capitalize;
+  word-spacing: 0.03rem;
+  font-weight: bolder;
+  text-decoration: underline;
+  text-underline-offset: 0.05rem;
+  text-decoration-color: #654bff;
+}
+.black-friday-component .timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0rem;
+  overflow: hidden;
+  width: calc(244px + 0rem);
+  text-align: center;
+}
+.black-friday-component .timer .colon {
+  width: 8px;
+  color: #fff;
+  font-size: 2rem;
+}
+.black-friday-component .timer .item {
+  text-align: center;
+  width: 55px;
+  height: fit-content;
+}
+.black-friday-component .timer .item .days,
+.black-friday-component .timer .item .hours,
+.black-friday-component .timer .item .minutes,
+.black-friday-component .timer .item .seconds {
+  text-align: center;
+  width: 55px;
+  overflow: hidden;
+  height: 40px;
+}
+.black-friday-component .timer .item .day,
+.black-friday-component .timer .item .hour,
+.black-friday-component .timer .item .min,
+.black-friday-component .timer .item .sec {
+  text-align: center;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.black-friday-component .timer .item .day span,
+.black-friday-component .timer .item .hour span,
+.black-friday-component .timer .item .min span,
+.black-friday-component .timer .item .sec span {
+  height: 40px;
+  color: #fff;
+  font-size: 2rem;
+  display: inline-block;
+}
+.black-friday-component .timer .item .day {
+  --count: var(--days);
+  animation: slide calc(var(--count) * 86400s) ease-out 0s 31 normal both;
+}
+.black-friday-component .timer .item .hour {
+  --count: var(--hours);
+  animation: slide calc(var(--count) * 3600s) steps(var(--count)) 0s 24 normal
+    both;
+}
+.black-friday-component .timer .item .min {
+  --count: var(--minutes);
+  animation: slide calc(var(--count) * 60s) steps(var(--count)) 0s 60 normal
+    both;
+}
+.black-friday-component .timer .item .sec {
+  --count: var(--seconds);
+  animation: slide calc(var(--count) * 1s) steps(var(--count)) 0s 60 normal both;
+}
+.black-friday-component .timer .item p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(calc(-40px * var(--count)));
+  }
+  99.6% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-40px * var(--count)));
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+    scale: 1;
+  }
+  50% {
+    transform: translateY(-10px);
+    scale: 1.1;
+  }
+  100% {
+    transform: translateY(0);
+    scale: 1;
+  }
+}
+
+.place-container {
+  overflow: auto;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.place-card {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 1rem;
+  width: 100%;
+}
+
+.place-card img {
+  width: 100%;
+  height: 200px; /* Sizga kerakli balandlik */
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+.title {
+  width: 100%;
+  display: inline-block;
+  word-break: break-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: 1rem auto;
+}
