@@ -20,6 +20,18 @@ router.get('/entertainment-places', (req, res) => {
     })
 })
 
+router.get('/events', (req, res) => {
+    res.render('events', {
+        title: "Tabdirlar | Talabachilik Uz"
+    })
+})
+
+router.get('/navi', (req, res) => {
+    res.render('navi', {
+        title: "Soon..."
+    })
+})
+
 
 
 export default router;
