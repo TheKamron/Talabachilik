@@ -14,6 +14,12 @@ router.get('/rental-houses', (req , res) => {
     })
 })
 
+router.get('/entertainment-places', (req, res) => {
+    res.render('entertainment-places', {
+        title: "Ko'ngil Ochar Joylar | Talabachilik Uz"
+    })
+})
+
 
 
 export default router;
