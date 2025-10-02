@@ -19,15 +19,19 @@
           <ul id="sidebarnav">
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">Sahifalar</span>
+              <span class="hide-menu">Asosiy</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="/" aria-expanded="false">
                 <span>
                   <i class="ti ti-layout-dashboard"></i>
                 </span>
-                <span class="hide-menu">Asosiy Panel</span>
+                <span class="hide-menu">Panel</span>
               </a>
+            </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Xizmatlar</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="/rental-houses" aria-expanded="false">
@@ -70,7 +74,7 @@
               </a>
             </li>
           </ul>
-          {{!-- <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 mt-5 rounded">
+          <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 mt-5 rounded">
             <div class="d-flex">
               <div class="unlimited-access-title me-3">
                 <h6 class="fw-semibold fs-4 mb-6 text-dark w-85">Premium ta'rifi</h6>
@@ -80,7 +84,7 @@
                 <img src="/assets/images/backgrounds/rocket.png" alt="" class="img-fluid">
               </div>
             </div>
-          </div> --}}
+          </div>
         </nav>
         <!-- End Sidebar navigation -->
       </div>
@@ -107,8 +111,7 @@
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
-              {{!-- <a href="/download-app" target="_blank" class="btn btn-primary">Yuklab olish</a> --}}
-              <h5>Kamronbek Amanov</h5>
+              <a href="/download-app" target="_blank" class="btn btn-primary">Yuklab olish</a>
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
@@ -141,31 +144,117 @@
         <!--  Row 1 -->
         <div class="row">
           <div class="col-lg-8 d-flex align-items-strech">
-             
-      <div class="main-card">
-        <div class="card-details">
-          {{!-- <p class="text-title">Arzon kvartira kerakmi?</p>
-          <p class="text-body">Hoziroq o'zingizga mos kvartira
-            tanlashni boshlang!
-          </p> --}}
-        </div>
-      <a href="/rental-houses" style="color: white;"><button class="card-button">Boshlash</button></a>
-      </div>     
-      
-      
-        {{!-- <div class="py-6 px-6 text-center">
+            <div class="card w-100">
+              <div class="card-body">
+                <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
+                  <div class="mb-3 mb-sm-0">
+                    <h5 class="card-title fw-semibold">Jami harajatlar <i class="ti ti-history"></i></h5>
+                  </div>
+                  <div>
+                    <select class="form-select">
+                      <option value="1">Sentyabr 2025</option>
+                      <option value="2">Oktyabr 2025</option>
+                      <option value="3">Noyabr 2025</option>
+                      <option value="4">Dekabr 2025</option>
+                    </select>
+                  </div>
+                  <div>
+                  </div>
+                </div>
+                <div id="breakup">
+                </div>
+                <ul class="info">
+                  <li class="fs-4"><span class="round-8 bg-primary rounded-circle me-2 d-inline-block"></span>Kiyim kechak</li>
+                  <li class="fs-4"><span class="round-8 bg-danger rounded-circle me-2 d-inline-block"></span>Transport</li>
+                  <li class="fs-4"><span class="round-8 bg-warning rounded-circle me-2 d-inline-block"></span>Oziq-ovqat</li>
+                  <li class="fs-4"><span class="round-8 bg-others rounded-circle me-2 d-inline-block"></span>Boshqalar</li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col-lg-12">
+                <!-- Yearly Breakup -->
+                <div class="card overflow-hidden">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-9 fw-semibold">Balans <i class="ti ti-wallet"></i></h5>
+                    <div class="row align-items-center">
+                      <div class="col-8">
+                        <h4 class="fw-semibold mb-3">1,214,000 UZS</h4>
+                        <div class="d-flex align-items-center mb-3">
+                          {{!-- <span
+                            class="me-1 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
+                            <i class="ti ti-arrow-up-left text-success"></i>
+                          </span> --}}
+                          {{!-- <p class="text-dark me-1 fs-3 mb-0">+9%</p>
+                          <p class="fs-3 mb-0">last year</p> --}}
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="me-4">
+                            <span class="round-8 bg-primary rounded-circle me-2 d-inline-block"></span>
+                            <span class="fs-2">2025</span>
+                          </div>
+                          <div>
+                            <span class="round-8 bg-light-primary rounded-circle me-2 d-inline-block"></span>
+                            <span class="fs-2">2026</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="d-flex justify-content-center">
+                          <div id="breakup"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <!-- Monthly Earnings -->
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row align-items-start">
+                      <div class="col-10">
+                        <h5 class="card-title mb-9 fw-semibold">Kunlik harajatlar<i class="ti ti-coin"></i></h5>
+                        <h4 class="fw-semibold mb-3">87,990 UZS</h4>
+                        <div class="d-flex align-items-center pb-1">
+                          <span
+                            class="me-2 rounded-circle bg-light-danger round-20 d-flex align-items-center justify-content-center">
+                            <i class="ti ti-arrow-down-right text-danger"></i>
+                          </span>
+                          <p class="text-dark me-1 fs-3 mb-0">-13%</p>
+                          <p class="fs-3 mb-0">zarar</p>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="d-flex justify-content-end">
+                          {{!-- <div
+                            class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
+                            <i class="ti ti-currency-dollar fs-6"></i>
+                          </div> --}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="earning"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="py-6 px-6 text-center">
           <p class="mb-0 fs-4">developed by <a href="https://t.me/offcodev" target="_blank" class="pe-1 text-primary text-decoration-underline">offcodev</a> Group number: <a href="/">103</a></p>
-        </div> --}}
-
-        
+        </div>
       </div>
     </div>
   </div>
-  <script src="/assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/js/sidebarmenu.js"></script>
-  <script src="/assets/js/app.min.js"></script>
-  <script src="/assets/libs/apexcharts/dist/apexcharts.min.js"></script>
-  <script src="/assets/libs/simplebar/dist/simplebar.js"></script>
-  <script src="/assets/js/dashboard.js"></script>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/sidebarmenu.js"></script>
+  <script src="../assets/js/app.min.js"></script>
+  <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
 </body>

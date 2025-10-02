@@ -1,48 +1,180 @@
 <body>
-  <!--  Body Wrapper -->
-  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
-    data-sidebar-position="fixed" data-header-position="fixed">
-    <div
-      class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
-      <div class="d-flex align-items-center justify-content-center w-100">
-        <div class="row justify-content-center w-100">
-          <div class="col-md-8 col-lg-6 col-xxl-3">
-            <div class="card mb-0">
-              <div class="register-card-body">
-                <a href="./index.html" class="text-nowrap logo-img text-center d-block py-3 w-100">
-                  <h2>Talabachilik.Uz</h2>
-                </a>
-                <p class="text-center">Ro'yxatdan o'tish uchun ma'lumotlaringizni kiriting.</p>
-                <form action="/register", method="post">
-                  <div class="mb-3">
-                    <label for="exampleInputtext1" class="form-label">Foydalanuvchi nomi</label>
-                    <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Telefon raqami</label>
-                    <input type="text" class="form-control" >
-                  </div>
-                  <div class="mb-4">
-                    <label for="exampleInputPassword1" class="form-label">Parol yarating</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                  </div>
-                   <div class="mb-4">
-                    <label for="exampleInputPassword1" class="form-label">Parolingizni tasdiqlang</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                  </div>
-                  <p class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Ro'yxatdan o'tish</p>
-                  <div class="d-flex align-items-center justify-content-center">
-                    <p class="fs-4 mb-0 fw-bold">Akkauntingiz bormi?</p>
-                    <a class="text-primary fw-bold ms-2" href="/login">Kirish</a>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+<div class="login-page-wrapper">
+  <form class="modern-form" method="post" action="/register">
+  <div class="form-title">Ro'yxatdan o'tish</div>
+
+  <div class="form-body">
+    <div class="input-group">
+      <div class="input-wrapper">
+        <svg fill="none" viewBox="0 0 24 24" class="input-icon">
+          <circle
+            stroke-width="1.5"
+            stroke="currentColor"
+            r="4"
+            cy="8"
+            cx="12"
+          ></circle>
+          <path
+            stroke-linecap="round"
+            stroke-width="1.5"
+            stroke="currentColor"
+            d="M5 20C5 17.2386 8.13401 15 12 15C15.866 15 19 17.2386 19 20"
+          ></path>
+        </svg>
+        <input
+          required=""
+          placeholder="Foydalanuvchi nomi"
+          class="form-input"
+          type="text"
+          name="username"
+        />
+      </div>
+    </div>
+
+    <div class="input-group">
+      <div class="input-wrapper">
+       <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 24 24"><path fill="#64748b" d="M19.5 22a1.5 1.5 0 0 0 1.5-1.5V17a1.5 1.5 0 0 0-1.5-1.5c-1.17 0-2.32-.18-3.42-.55a1.51 1.51 0 0 0-1.52.37l-1.44 1.44a14.772 14.772 0 0 1-5.89-5.89l1.43-1.43c.41-.39.56-.97.38-1.53c-.36-1.09-.54-2.24-.54-3.41A1.5 1.5 0 0 0 7 3H3.5A1.5 1.5 0 0 0 2 4.5C2 14.15 9.85 22 19.5 22M3.5 4H7a.5.5 0 0 1 .5.5c0 1.28.2 2.53.59 3.72c.05.14.04.34-.12.5L6 10.68c1.65 3.23 4.07 5.65 7.31 7.32l1.95-1.97c.14-.14.33-.18.51-.13c1.2.4 2.45.6 3.73.6a.5.5 0 0 1 .5.5v3.5a.5.5 0 0 1-.5.5C10.4 21 3 13.6 3 4.5a.5.5 0 0 1 .5-.5Z"/></svg>
+        <input
+          required=""
+          placeholder="Telefon raqam"
+          class="form-input"
+          type="text"
+          name="phoneNumber"
+        /> 
+      </div>
+    </div>
+
+    <div class="input-group">
+      <div class="input-wrapper">
+        <svg fill="none" viewBox="0 0 24 24" class="input-icon">
+          <path
+            stroke-width="1.5"
+            stroke="currentColor"
+            d="M12 10V14M8 6H16C17.1046 6 18 6.89543 18 8V16C18 17.1046 17.1046 18 16 18H8C6.89543 18 6 17.1046 6 16V8C6 6.89543 6.89543 6 8 6Z"
+          ></path>
+        </svg>
+        <input
+          required=""
+          placeholder="Parol yarating"
+          class="form-input"
+          type="password"
+          name="password"
+        />
+        <button class="password-toggle" type="button">
+          <svg fill="none" viewBox="0 0 24 24" class="eye-icon">
+            <path
+              stroke-width="1.5"
+              stroke="currentColor"
+              d="M2 12C2 12 5 5 12 5C19 5 22 12 22 12C22 12 19 19 12 19C5 19 2 12 2 12Z"
+            ></path>
+            <circle
+              stroke-width="1.5"
+              stroke="currentColor"
+              r="3"
+              cy="12"
+              cx="12"
+            ></circle>
+          </svg>
+        </button>
+      </div>
+    </div>
+      <div class="input-group">
+      <div class="input-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="14" stroke-dashoffset="14" d="M8 12L11 15L16 10"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="14;0"/></path></g></svg>
+        <input
+          required=""
+          placeholder="Parolingizni tasdiqlang"
+          class="form-input"
+          type="password"
+          name="confirmPassword"
+        />
+        <button class="password-toggle" type="button">
+          <svg fill="none" viewBox="0 0 24 24" class="eye-icon">
+            <path
+              stroke-width="1.5"
+              stroke="currentColor"
+              d="M2 12C2 12 5 5 12 5C19 5 22 12 22 12C22 12 19 19 12 19C5 19 2 12 2 12Z"
+            ></path>
+            <circle
+              stroke-width="1.5"
+              stroke="currentColor"
+              r="3"
+              cy="12"
+              cx="12"
+            ></circle>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
-  <script src="/assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <button class="submit-button" type="submit">
+    <span class="button-text">Akkaunt yaratish</span>
+    <div class="button-glow"></div>
+  </button>
+
+  <div class="form-footer">
+    <a class="login-link" href="/login">
+      Akkauntingiz mavjudmi? <span>Kirish</span>
+    </a>
+  </div>
+</form>
+</div>
+
+{{!-- Scripts --}}
+<script>
+const eyeSVG = `
+  <svg fill="none" viewBox="0 0 24 24" class="eye-icon" aria-hidden="true">
+    <path stroke-width="1.5" stroke="currentColor" d="M2 12C2 12 5 5 12 5C19 5 22 12 22 12C22 12 19 19 12 19C5 19 2 12 2 12Z"></path>
+    <circle stroke-width="1.5" stroke="currentColor" r="3" cy="12" cx="12"></circle>
+  </svg>`;
+
+const eyeOffSVG = `
+  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 16 16">
+      <path fill="currentColor"
+        d="M5.22 12.549c.856.29 1.783.451 2.78.451c3.462 0 6.094-1.955 
+           7.826-4.433a1.01 1.01 0 0 0 0-1.134c-.74-1.06-1.646-2.024-2.71-2.78l-.725.724c1.029.7 
+           1.901 1.618 2.604 2.632C13.438 10.234 11.06 12 8 
+           12a7.6 7.6 0 0 1-1.975-.257zm1.735-1.736a3 3 0 0 0 3.858-3.858l-.825.825A2 
+           2 0 0 1 7.78 9.988zM6.012 8.22l-.825.825a3 3 0 0 1 3.858-3.858l-.825.825A2 
+           2 0 0 0 6.012 8.22m3.963-3.963A7.6 7.6 0 0 0 8 4C4.938 4 2.558 5.769 
+           1.007 7.987c.702 1.016 1.574 1.935 2.603 2.636l-.726.725C1.82 
+           10.59.914 9.628.173 8.568a1.02 1.02 0 0 1 .006-1.145C1.905 4.955 
+           4.537 3 8 3a8.6 8.6 0 0 1 2.782.452zM1.854 14.854a.5.5 0 0 
+           1-.708-.708l13-13a.5.5 0 0 1 .708.708z"/>
+    </svg>`;
+
+/* Barcha password-toggle tugmalariga listener qo'shamiz */
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.password-toggle').forEach(button => {
+    // boshlang'ich ikonka (agar HTMLda mavjud bo'lmasa)
+    if (!button.querySelector('svg')) button.innerHTML = eyeSVG;
+
+    button.addEventListener('click', () => {
+      // inputni shu tugma ichidagi yoki yaqin parent .input-wrapper dan topamiz
+      const wrapper = button.closest('.input-wrapper');
+      const input = wrapper ? wrapper.querySelector('input') : null;
+
+      if (!input) return; // input topilmasa chiqamiz
+
+      const isPassword = input.type === 'password';
+      input.type = isPassword ? 'text' : 'password';
+
+      // accessibility va tooltip yangilash
+      button.setAttribute('aria-pressed', String(isPassword));
+      button.setAttribute('aria-label', isPassword ? 'Hide password' : 'Show password');
+      button.title = isPassword ? 'Hide password' : 'Show password';
+
+      // ikonani almashtiramiz
+      button.innerHTML = isPassword ? eyeOffSVG : eyeSVG;
+
+      // agar inputga fokus qaytishi kerak bo'lsa:
+      input.focus();
+      // kursor oxirida bo'lishi uchun:
+      const len = input.value.length;
+      input.setSelectionRange(len, len);
+    });
+  });
+});
+</script>
 </body>
